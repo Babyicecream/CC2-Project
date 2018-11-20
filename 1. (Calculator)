@@ -1,0 +1,50 @@
+package javaapplication1;
+
+
+import java.util.Scanner;
+    
+   public class JavaApplication1 {
+
+    
+   public static void main(String[] args) {                  
+      Scanner coc = new Scanner(System.in);
+      
+      System.out.print("Input first number:");
+      double fnum1 = coc.nextDouble();
+      
+      System.out.print("Input second number:");
+      double snum2 = coc.nextDouble();
+      
+      System.out.print("Select Operator: + , - , * , /: add, multiply, devide , subtract,:: ");
+      String Operator = coc.next();
+      
+        switch (Operator){
+            
+             
+            case "+":
+            case "add":
+            System.out.print(fnum1 + snum2);    
+        break;
+        
+             case "-":
+             case "subtract":
+            System.out.print(fnum1 + snum2);    
+        break; 
+             
+             case "%":
+             case "devide":
+            
+            System.out.print(fnum1 + snum2);    
+        break;
+             
+             case "*":
+             case "multiply":
+            System.out.print(fnum1 + snum2);    
+        break;
+             
+             default :
+            System.out.print("Invalid Input!!!");
+
+        }
+    }
+}
