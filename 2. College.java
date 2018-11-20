@@ -1,6 +1,6 @@
-package subnestedifs;
+package College;
 import java.util.Scanner;
-public class SubNestedIfs {
+public class College {
 
   
     public static void main(String[] args) {
