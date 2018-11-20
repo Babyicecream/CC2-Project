@@ -1,0 +1,36 @@
+package javaapplication1;
+import java.util.Scanner;
+
+public class MultiDimensionalArray {
+    public static void main(String args []){
+        
+   
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter number of rows: ");
+        int numberOfRows = sc.nextInt();
+        
+        System.out.print("Enter number of columns: ");
+        int numberOfColumns = sc.nextInt();
+        
+        
+        int a[][] = new int [numberOfRows][numberOfColumns];
+        
+        for (int i = 0; i<numberOfRows;i++){
+            for (int j = 0; j<numberOfColumns;j++){
+                
+                System.out.print("Row [" + i + "] Column[" + j + "] = ");
+                a[i][j] = sc.nextInt();
+                
+        }
+}
+        System.out.println();
+        System.out.println("Elements of 2d array: ");
+          for (int i = 0; i<numberOfRows;i++){
+            for (int j = 0; j<numberOfColumns;j++){
+                System.out.print(a[i][j] + "\t");
+            }System.out.println();
+          }
+    }
+    
+}
