@@ -1,0 +1,57 @@
+package javaapplication1;
+import java.util.Scanner;
+
+public class Guessingnumber {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int thenumber = 778;
+        
+        int num1;
+        
+        int lowest = 1;
+        
+        int highest = 1000;
+        
+        do {
+        System.out.print("Guess the number: ");
+        num1 = sc.nextInt();
+        
+        
+            if (num1 == thenumber) 
+                System.out.println("Correct!");
+        
+            else if (num1 < lowest) {
+                System.out.println("Invalid!");
+                    if (thenumber % 2 == 0)
+                        System.out.println("The number to be guessed is even!");
+                    else 
+                        System.out.println("The number to be guessed is odd!"); }
+            
+            
+            else if (num1 > highest) {
+                System.out.println("Invalid!");
+                    if (thenumber % 2 == 0)
+                        System.out.println("The number to be guessed is even!");
+                    else 
+                        System.out.println("The number to be guessed is odd!"); }
+            
+            
+            else if (num1 < thenumber) {
+                System.out.println("Higher!"); 
+                    if (thenumber % 2 == 0)
+                        System.out.println("The number to be guessed is even!");
+                    else 
+                        System.out.println("The number to be guessed is odd!"); }
+            
+            else if (num1 > thenumber) {
+                System.out.println("Lower!");
+                    if (thenumber % 2 == 0)
+                        System.out.println("The number to be guessed is even!");
+                    else 
+                        System.out.println("The number to be guessed is odd!"); }
+            
+            }
+        while(num1 != thenumber);
+        }
+}
